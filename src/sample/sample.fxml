@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane style="-fx-background-color: #f0bdef;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+      <Canvas fx:id="can" height="300.0" width="300.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <FlowPane prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #ea80e8;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="18.0" prefWidth="134.0" text="Введите число сторон:" />
+            <TextField fx:id="value1" prefHeight="26.0" prefWidth="32.0" />
+            <Button mnemonicParsing="false" onAction="#addPicker" style="-fx-background-color: #e6ea9d;" text="Построить" textFill="#0e0e0e" />
+            <ColorPicker fx:id="picker" prefHeight="26.0" prefWidth="146.0" />
+            <Label fx:id="figura" prefHeight="18.0" prefWidth="391.0" text="Фигура" />
+         </children>
+      </FlowPane>
+   </top>
+   <bottom>
+      <Label text="*0-круг; 1-прямая; 2-угол; 3-треугольник; 4-квадрат; 5-пятиугольник" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
